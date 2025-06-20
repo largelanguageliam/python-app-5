@@ -1,0 +1,5 @@
+replicaCount: 1
+image:
+  repository: lvbeware/python-app-5
+  pullPolicy: IfNotPresent
+  tag: python-app-5-dev-latest
