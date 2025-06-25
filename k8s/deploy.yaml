@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app-5
+  labels:
+    app: python-app-5
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-app-5
+  template:
+    metadata:
+      labels:
+        app: python-app-5
+    spec:
+      containers:
+      - name: python-app-5
+        image: lvbeware/python-app-5:v2
+        ports:
+        - containerPort: 5000
+

@@ -1,0 +1,11 @@
+replicaCount: 2
+image:
+  repository: lvbeware/python-app
+  pullPolicy: IfNotPresent
+  tag: python-app-5-dev-latest
+
+resources: 
+  requests:
+    cpu: 60m
+    memory: 60M
+
